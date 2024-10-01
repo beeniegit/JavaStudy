@@ -8,6 +8,17 @@ public class JavaStudyApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JavaStudyApplication.class, args);
+		
+		hoonie();
+		beenie();
+	}
+	
+	private static void hoonie() {
+		
+	}
+	
+	private static void beenie() {
+		
 	}
 
 }
