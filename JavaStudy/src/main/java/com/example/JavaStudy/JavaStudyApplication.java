@@ -1,6 +1,5 @@
 // 패키지 : 주소
 package com.example.JavaStudy;
-import com.example.JavaStudy.Beenie.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -34,8 +33,7 @@ public class JavaStudyApplication {
 	
 	// 정적(Static) 메서드 : 인스턴스 없이도 사용가능한 메서드)
 	private static void beenie() {
-		DK 딮기 = new DK("DPLUS KIA", "Kingen, Lucid, ShowMaker, Aiming, Kellin, Moham", "ShowMaker");
-		딮기.Class1();
+
 	}
 
 }
