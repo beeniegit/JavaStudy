@@ -1,4 +1,4 @@
-package com.example.JavaStudy.Hoonie;
+package com.example.JavaStudy.Hoonie.Reference;
 
 // [구현 == implements] : 인터페이스의 규칙을 지키며 클래스를 만드는 것
 // 여러개의 인터페이스를 동시에 구현할 수 있음

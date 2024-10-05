@@ -1,4 +1,4 @@
-package com.example.JavaStudy.Hoonie;
+package com.example.JavaStudy.Hoonie.Reference;
 
 // [클래스]
 public class SampleSuperClass {

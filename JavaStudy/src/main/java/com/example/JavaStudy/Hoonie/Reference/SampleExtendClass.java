@@ -1,4 +1,4 @@
-package com.example.JavaStudy.Hoonie;
+package com.example.JavaStudy.Hoonie.Reference;
 
 // [상속 == Extends] : 클래스의 속성과 메서드를 물려받아 사용하는 것
 

@@ -1,4 +1,4 @@
-package com.example.JavaStudy.Hoonie;
+package com.example.JavaStudy.Hoonie.Reference;
 
 // [인터페이스] : 클래스가 지켜야 할 약속/규칙
 
