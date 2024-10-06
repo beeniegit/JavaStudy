@@ -2,7 +2,7 @@
 package com.example.JavaStudy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import com.example.JavaStudy.Daily.*;
 @SpringBootApplication
 // 클래스 : 코드를 적는 곳
 public class JavaStudyApplication {
@@ -33,7 +33,18 @@ public class JavaStudyApplication {
 	
 	// 정적(Static) 메서드 : 인스턴스 없이도 사용가능한 메서드)
 	private static void beenie() {
-
+		PracticeImplements Instance1 = new PracticeImplements();
+		Instance1.Dire(); // 인스턴스로 메서드 기능 
+		
+		PLSearch Instance2 = new PLSearch();
+		Instance2.SearchTeam("Spurs"); // 인스턴스로 메서드 기능 
+		
+		PLSearch Instance3 = new PLSearch();
+		Instance3.SearchLeader("Walker"); // 인스턴스로 메서드 기능 
+		
+		PracticeSuper Instance4 = new PracticeSuper(2, 7);
+		Instance4.printer(); // 인스턴스로 메서드 기능 
+		
 	}
 
 }
