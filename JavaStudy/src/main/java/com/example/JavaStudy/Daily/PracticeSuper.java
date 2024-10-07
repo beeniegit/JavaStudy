@@ -6,7 +6,7 @@ public class PracticeSuper extends PracticeExtends {
 	public PracticeSuper(int grade, int room) {
 		super(grade, room); // super : 상속받은 클래스의 속성 값 매핑
 	}
-	// 메서
+	// 메서드
 	public void printer() {
 		System.out.println("저는 " + Grade + "학년 " + Room + "반 입니다.");
 	}
