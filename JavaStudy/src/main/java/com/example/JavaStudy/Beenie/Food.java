@@ -1,4 +1,5 @@
-package com.example.JavaStudy.Daily;
+package com.example.JavaStudy.Beenie;
+
 import java.util.List;
 
 import lombok.AllArgsConstructor;
@@ -8,11 +9,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
+public class Food {
 	
-public class Esports {
 	private String name;
-	private int team_member_count;
-	private String howtowin;
-	private List<LCKTeams> teams;
-
+	private List<FoodType> type; 
 }

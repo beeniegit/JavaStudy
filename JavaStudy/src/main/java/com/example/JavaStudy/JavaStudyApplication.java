@@ -8,11 +8,11 @@ import java.util.Map;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.example.JavaStudy.Beenie.Food;
+import com.example.JavaStudy.Beenie.FoodType;
+import com.example.JavaStudy.Beenie.Foods;
 import com.example.JavaStudy.Daily.ClassImplement;
 import com.example.JavaStudy.Daily.ClassSuper;
-import com.example.JavaStudy.Daily.Esports;
-import com.example.JavaStudy.Daily.LCKPlayer;
-import com.example.JavaStudy.Daily.LCKTeams;
 
 import Sample.Person;
 import Sample.Sports;
@@ -53,7 +53,7 @@ public class JavaStudyApplication {
 		Sports football = new Sports("축구", 11, 90, footballTeams);
 		
 		// 삼성 라이온즈 선수 리스트
-		List<Person> smMembers = new ArrayList<>();
+		List<Person> slMembers = new ArrayList<>();
 		totMembers.add(new Person("구자욱", 31, 5, "좌익수"));
 		totMembers.add(new Person("김재윤", 34, 62, "마무리"));		
 
@@ -64,7 +64,7 @@ public class JavaStudyApplication {
 		
 		// 프로야구 팀 리스트
 		List<Teams> baseballTeams = new ArrayList<>();
-		baseballTeams.add(new Teams("삼성 라이온즈", "대한민국", smMembers));
+		baseballTeams.add(new Teams("삼성 라이온즈", "대한민국", slMembers));
 		baseballTeams.add(new Teams("신세계 랜더스", "대한민국", ssgMembers));
 		
 		// 야구 인스턴스
@@ -94,43 +94,50 @@ public class JavaStudyApplication {
 	}
 	
 	// 정적(Static) 메서드 : 인스턴스 없이도 사용가능한 메서드
+	
+	// 1. 상속, 구현 : Daily
+	// 2. 음식 Map (식사, 디저트)
 	private static void beenie() {
 		
-		// T1 선수단
-		List<LCKPlayer> T1member = new ArrayList<>();
-		T1member.add(new LCKPlayer("대상혁", 28, "Mid Laner"));
-		T1member.add(new LCKPlayer("이민형", 22, "AD Carry"));
+		ClassImplement 인턴1 = new ClassImplement();
+		인턴1.케일();
 		
-		List<Integer> sample = new ArrayList<>();
+		ClassSuper 인턴2 = new ClassSuper("카사딘", 16);
+		인턴2.쇼앤프루브();
+		
+		//고기요리 리스트
+		List<Foods> meat = new ArrayList<>();
+		meat.add(new Foods("스테이크", "따듯함", "고소함"));
+		meat.add(new Foods("육개장", "뜨거움", "얼큰함"));
 
-		// 젠지 선수단
-		List<LCKPlayer> GENmember = new ArrayList<>();
-		GENmember.add(new LCKPlayer("정지훈", 23, "Mid Laner"));
-		GENmember.add(new LCKPlayer("신창섭", 19, "GOD"));
+		// 면요리 리스트
+		List<Foods> noodle = new ArrayList<>();
+		noodle.add(new Foods("라면", "따듯함", "자극적"));
+		noodle.add(new Foods("냉우동", "시원함", "감칠맛"));
 		
-		// LCK 팀 리스트
-		List<LCKTeams> LCKTeam = new ArrayList<>();
-		LCKTeam.add(new LCKTeams("T1", "Korea Republic", T1member));
-		LCKTeam.add(new LCKTeams("Gen.G Esports", "Korea Republic", GENmember));
+		List<FoodType> typemain = new ArrayList<>();
+		typemain.add(new FoodType("고기", meat));
+		typemain.add(new FoodType("면", noodle));
 		
-		Esports LoL = new Esports("LoL Esport", 5, "Destroy_enemy's_nexus", LCKTeam);
+		Food main = new Food("메인요리", typemain);
 		
-		Map<String, Esports> esports = new HashMap<>();
-		esports.put("롤 이스포츠", LoL);
+		List<Foods> 아이스크림 = new ArrayList<>();
+		아이스크림.add(new Foods("요거트맛", "차가움", "상큼함"));
+		아이스크림.add(new Foods("민트초코", "차가움", "치약"));
 		
-		System.out.println(esports.get("롤 이스포츠").getTeams().get(0).getMembers().get(0).getName());
-						  // Esports 클래스의 인스턴스
-												// List 클래스의 인스턴스
-															// LCKTeams 클래스의 인스턴스
-		                                                          // List 클래스의 인스턴스
-		                                                                       // LCKPlayer 클래스의 인스턴스
-		                                                                               // String 클래스의 인스턴스 = 문자 
+		List<FoodType> 디저트 = new ArrayList<>();
+		디저트.add(new FoodType());
 		
-		ClassSuper Instance1 = new ClassSuper("부산", "돼지국밥");
-		Instance1.BiteYourself();
+		Food desert = new Food("디저트", 디저트);
 		
-		ClassImplement Instance2 = new ClassImplement();
-		Instance2.Neto();
+		Map<String, Food> 음식 = new HashMap<>();
+		음식.put("축구", main);
+		음식.put("야구", desert);
+		
+		
+		
+		
+		
 		
 		
 	}

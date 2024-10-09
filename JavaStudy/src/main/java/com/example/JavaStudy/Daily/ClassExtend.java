@@ -2,12 +2,12 @@ package com.example.JavaStudy.Daily;
 
 public class ClassExtend {
 	
-	protected String City;
-	protected String Food;
+	protected int Level;
+	protected String Champ;
 	
-	public ClassExtend(String city, String food) {
-		this.Food = food;
-		this.City = city;
+	public ClassExtend(int level, String champ) {
+		this.Level = level;
+		this.Champ = champ;
 	}
-	
+
 }

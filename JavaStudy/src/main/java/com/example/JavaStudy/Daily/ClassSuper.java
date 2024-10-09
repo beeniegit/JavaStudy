@@ -2,12 +2,12 @@ package com.example.JavaStudy.Daily;
 
 public class ClassSuper extends ClassExtend {
 	
-	public ClassSuper(String city, String food) {
-		super(city, food);
+	public ClassSuper(String champ, int level) {
+		super(level, champ);
 	}
-	public void BiteYourself() {
-		System.out.println(City + "에는 " + Food + "이 유명한 걸로 압니다");
+	
+	public void 쇼앤프루브() {
+		System.out.println(Level + "레벨 " + Champ + "앞에서는 소용없지");
 	}
-		
 
 }

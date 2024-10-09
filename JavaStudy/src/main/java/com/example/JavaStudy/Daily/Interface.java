@@ -2,6 +2,6 @@ package com.example.JavaStudy.Daily;
 
 public interface Interface {
 	
-	void Neto();
+		void 케일();
 
 }

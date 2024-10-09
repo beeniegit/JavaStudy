@@ -1,5 +1,4 @@
-package com.example.JavaStudy.Daily;
-
+package com.example.JavaStudy.Beenie;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,9 +7,11 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 
-public class LCKPlayer {
+public class Foods {
+	
 	private String name;
-	private int age;
-	private String position;
+	private String temperature;
+	private String taste;
+
 
 }
