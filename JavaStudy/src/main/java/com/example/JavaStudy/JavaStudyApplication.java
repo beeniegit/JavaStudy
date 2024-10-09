@@ -78,18 +78,18 @@ public class JavaStudyApplication {
 		// TEST
 		Sports 꺼낸야구 = sports.get("야구");
 
-		//System.out.println(sports.get("축구").getTeams().get(0).getMembers().get(0).getName());
+		System.out.println(sports.get("축구").getTeams().get(0).getMembers().get(0).getName());
                            // List<Teams>
 										 // Teams
 												// List<Person>
 		                                                    // Person
-					Sports 꺼낸축구 = sports.get("축구");                                                             // String (name)
+					Sports 꺼낸축구 = sports.get("축구");                             // String (name)
 							List<Teams> 꺼낸팀리스트 = 꺼낸축구.getTeams();
 										Teams 꺼낸팀 = 꺼낸팀리스트.get(0);
 												List<Person> 꺼낸사람리스트 = 꺼낸팀.getMembers();
 															Person 꺼낸사람 = 꺼낸사람리스트.get(0);
 																	String 꺼낸이름 = 꺼낸사람.getName();
-		//System.out.println(꺼낸이름);
+		 System.out.println(꺼낸이름);
 		
 	}
 	
@@ -100,6 +100,8 @@ public class JavaStudyApplication {
 		List<LCKPlayer> T1member = new ArrayList<>();
 		T1member.add(new LCKPlayer("대상혁", 28, "Mid Laner"));
 		T1member.add(new LCKPlayer("이민형", 22, "AD Carry"));
+		
+		List<Integer> sample = new ArrayList<>();
 
 		// 젠지 선수단
 		List<LCKPlayer> GENmember = new ArrayList<>();
@@ -117,6 +119,12 @@ public class JavaStudyApplication {
 		esports.put("롤 이스포츠", LoL);
 		
 		System.out.println(esports.get("롤 이스포츠").getTeams().get(0).getMembers().get(0).getName());
+						  // Esports 클래스의 인스턴스
+												// List 클래스의 인스턴스
+															// LCKTeams 클래스의 인스턴스
+		                                                          // List 클래스의 인스턴스
+		                                                                       // LCKPlayer 클래스의 인스턴스
+		                                                                               // String 클래스의 인스턴스 = 문자 
 		
 		ClassSuper Instance1 = new ClassSuper("부산", "돼지국밥");
 		Instance1.BiteYourself();
