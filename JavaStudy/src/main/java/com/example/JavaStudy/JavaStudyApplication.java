@@ -3,6 +3,9 @@ package com.example.JavaStudy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.example.JavaStudy.Daily.ClassImplement;
+import com.example.JavaStudy.Daily.ClassSuper;
+
 @SpringBootApplication
 // 클래스 : 코드를 적는 곳
 public class JavaStudyApplication {
@@ -33,7 +36,15 @@ public class JavaStudyApplication {
 	
 	// 정적(Static) 메서드 : 인스턴스 없이도 사용가능한 메서드)
 	private static void beenie() {
-
+		
+		ClassSuper 인턴1 = new ClassSuper("카사딘", 16);
+		인턴1.printer();
+		
+		ClassSuper 인턴2 = new ClassSuper("케일", 20);
+		인턴2.printer();
+		
+		ClassImplement 인턴3 = new ClassImplement();
+		인턴3.blalala();
 	}
 
 }
