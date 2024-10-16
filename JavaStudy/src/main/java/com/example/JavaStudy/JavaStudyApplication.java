@@ -1,7 +1,14 @@
-// 패키지 : 주소
+ // 패키지 : 주소
 package com.example.JavaStudy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.JavaStudy.Beenie.응원가박스;
+import com.example.JavaStudy.Beenie.응원가스레드;
+import com.example.JavaStudy.Daily.클래스수퍼;
+import com.example.JavaStudy.Daily.클래스임플리멘트;
+import com.example.JavaStudy.Hoonie.MessageBox;
+import com.example.JavaStudy.Hoonie.PrinterThread;
 
 @SpringBootApplication
 // 클래스 : 코드를 적는 곳
@@ -16,23 +23,32 @@ public class JavaStudyApplication {
 	
 	private static void hoonie() {
 		
-		/*
-		 * 0. Beenie 패키지 만들기
-		 * 
-		 * 1. 클래스, 인스턴스, 메서드, 속성, 인터페이스, 상속, 구현 수행하기
-		 * (주석으로 설명도 다 남기기)
-		 * 
-		 * 2. 터미널에서 아래의 명령어로 git 등록하기
-		 * > git add .
-		 * > git commit -m "241001 - 기본 자바 구조 학습"
-		 * > git push
-		 * 
-		 */
+		MessageBox box = new MessageBox();
 		
+		for (int i=1; i<=20; i++) {
+			Thread t = new Thread(new PrinterThread(box.returnMessage()));
+			//t.start();
+		}
+
 	}
 	
 	// 정적(Static) 메서드 : 인스턴스 없이도 사용가능한 메서드)
 	private static void beenie() {
+		
+		
+		응원가박스 박스 = new 응원가박스();
+		
+		for (int i=1; i<=400; i++) {
+			Thread t = new Thread(new 응원가스레드(박스.리턴메세지()));
+			t.start();
+		}
+		
+		클래스임플리멘트 인스턴스1 = new 클래스임플리멘트();
+		인스턴스1.분데스();
+		
+		클래스수퍼 인스턴스2 = new 클래스수퍼("김도빈", 17);
+		인스턴스2.프린터기();
+
 
 	}
 
