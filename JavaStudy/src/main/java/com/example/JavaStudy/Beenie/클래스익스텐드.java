@@ -9,7 +9,7 @@ public class 클래스익스텐드 extends 클래스수퍼 {
 		this.티어 = 티어;
 	}
 	
-	public void 메서드() {
+	public void 보상() {
 		System.out.println(super.보상);
 	}
 
